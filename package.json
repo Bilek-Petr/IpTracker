@@ -1,18 +1,19 @@
 {
-  "name": "ip_address_tracker",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "vite": "^5.2.0"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "sass": "^1.77.4"
-  }
+   "name": "ip_address_tracker",
+   "private": true,
+   "version": "0.0.0",
+   "type": "module",
+   "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "sass": "sass src/assets/styles/main.scss public/css/style.css"
+   },
+   "devDependencies": {
+      "vite": "^5.2.0"
+   },
+   "dependencies": {
+      "dotenv": "^16.4.5",
+      "sass": "^1.77.4"
+   }
 }
