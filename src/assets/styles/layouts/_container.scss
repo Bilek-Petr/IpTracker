@@ -1,0 +1,15 @@
+.container__header {
+   width: min(90%, 50rem);
+   margin: 0 auto;
+   text-align: center;
+   padding-top: 2rem;
+}
+
+.container__form {
+   display: flex;
+   justify-content: center;
+}
+
+.container__info {
+   margin-top: 2rem;
+}

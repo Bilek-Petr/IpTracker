@@ -1,0 +1,33 @@
+.form {
+   margin: 1.5rem 0;
+
+   @include respond-to-desktop {
+      width: min(65%, 30rem);
+      margin: 2rem auto;
+   }
+}
+
+.form__input {
+   width: 100%;
+   font-size: $fs-100;
+   padding: 1rem;
+   color: $gray-600;
+
+   @include input-border-styles(10px 0 0 10px);
+
+   @include respond-to-desktop {
+      font-size: $fs-200;
+   }
+}
+
+.form__button {
+   width: 20%;
+   background-color: $black;
+
+   @include input-border-styles(0 10px 10px 0);
+
+   &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+   }
+}

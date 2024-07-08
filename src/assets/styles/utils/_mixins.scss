@@ -1,0 +1,10 @@
+@mixin input-border-styles($border-radius) {
+   border-radius: $border-radius;
+   border: none;
+}
+
+@mixin respond-to-desktop {
+   @media only screen and (min-width: $breakpoint-700) {
+      @content;
+   }
+}

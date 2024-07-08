@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- MAP -->
+      <link
+         rel="stylesheet"
+         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+         crossorigin=""
+      />
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+      <script
+         src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+         crossorigin=""
+      ></script>
+
+      <title>IP Address Tracker</title>
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <div class="container__header">
+               <h1 class="title">IP Address Tracker</h1>
+               <form class="container__form form">
+                  <input
+                     type="text"
+                     name="form__input"
+                     id="form__input"
+                     class="form__input"
+                     placeholder="Search for any IP address or domain"
+                     maxlength="25"
+                  />
+                  <button class="form__button centered">
+                     <span class="sr-only">Search for any IP address</span>
+                     <img src="/assets/images/icon-arrow.svg" alt="Search" />
+                  </button>
+               </form>
+
+               <div class="container__info info">
+                  <div class="info__item info__item--featured">
+                     <p class="info__item-title">ip address</p>
+                     <p data-ip class="info__item-info"></p>
+                  </div>
+                  <div class="info__item info__item--featured">
+                     <p class="info__item-title">location</p>
+                     <p data-location class="info__item-info"></p>
+                  </div>
+                  <div class="info__item">
+                     <p class="info__item-title">timezone</p>
+                     <p data-timezone class="info__item-info"></p>
+                  </div>
+                  <div class="info__item">
+                     <p class="info__item-title">isp</p>
+                     <p data-isp class="info__item-info"></p>
+                  </div>
+               </div>
+            </div>
+         </header>
+
+         <div id="map"></div>
+      </div>
+   </body>
+
+   <script type="module" src="/src/index.js"></script>
+</html>

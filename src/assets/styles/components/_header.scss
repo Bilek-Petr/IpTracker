@@ -1,0 +1,13 @@
+header {
+   background-image: url(/assets/images/pattern-bg-mobile.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   background-color: #666464;
+   height: 20rem;
+
+   @include respond-to-desktop {
+      background-image: url(/assets/images/pattern-bg-desktop.png);
+      height: 16.5rem;
+   }
+}

@@ -1,0 +1,11 @@
+#map {
+   height: 53rem;
+   width: 100%;
+   position: relative;
+   z-index: 1;
+   cursor: pointer;
+}
+
+.leaflet-marker-icon {
+   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
