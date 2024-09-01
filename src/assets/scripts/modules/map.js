@@ -7,7 +7,7 @@ const setLocationPoints = (data) => {
 
 const createIcon = () => {
    return L.icon({
-      iconUrl: '/assets/images/icon-location.svg',
+      iconUrl: 'assets/images/icon-location.svg',
       iconSize: [46, 56],
       iconAnchor: [23, 56],
       popupAnchor: [0, -56],
