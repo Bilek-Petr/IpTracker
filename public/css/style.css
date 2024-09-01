@@ -248,15 +248,15 @@ a {
    }
 }
 header {
-   background-image: url(public/assets/images/pattern-bg-mobile.png);
+   background-image: url(../assets/images/pattern-bg-mobile.png);
    background-repeat: no-repeat;
    background-size: cover;
-   background-color: #666464;
+   background-color: #5c5c5c;
    height: 20rem;
 }
 @media only screen and (min-width: 700px) {
    header {
-      background-image: url(public/assets/images/pattern-bg-desktop.png);
+      background-image: url(../assets/images/pattern-bg-desktop.png);
       height: 16.5rem;
    }
 }

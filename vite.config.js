@@ -1,11 +1,10 @@
+// vite.config.ts
 import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import dotenv from 'dotenv';
 
-// Load environment variables from .env.local
-dotenv.config({ path: '.env.local' });
-
+// https://vitejs.dev/config/
 export default defineConfig({
-   plugins: [vue()],
-   // Other Vite configurations...
+   base: '/IpTracker/',
+   define: {
+      'process.env': process.env,
+   },
 });
